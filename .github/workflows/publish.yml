@@ -38,5 +38,7 @@ jobs:
           body: "Automated build from commit ${{ github.sha }}"
           files: |
             dist/*.exe
+          make_latest: true
+          overwrite: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
